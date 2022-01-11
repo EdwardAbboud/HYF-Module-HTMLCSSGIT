@@ -1,0 +1,16 @@
+1) To create a hidden file we just have to use 'touch' and then add a '.' before the file name. For a folder we need to use the 'mkdir' and then add a '.' before the folder name:
+
+%	touch .hidden-file
+%	mkdir .hidden-folder
+
+To view these items we can use the command 'ls' with '-al' after it. This will show all the items in a list compared to the default block view and will include all hidden items.
+
+%	ls -al
+
+2) To create multiple nested directories we use the same 'mkdir' command with the addition '-p' which will create parent directories.
+
+%	mkdir -p week1/new/folder/setup
+
+3) We can append a message to a file by using the 'echo' command followed by 'message' >> filename
+
+%	{ echo 'first message' && echo 'second message'; } >> 'New Message'.txt
